@@ -1,0 +1,23 @@
+.header{
+    background-color: #fff;
+    &__container{
+        .site-logo{
+            margin-right: auto;
+        }
+        display: flex;
+        align-items: center;
+        .burger{
+            display: none;
+        }
+    }
+    @include responsive(tablet){
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
+        .header-btn{
+            display: none;
+        }
+        .burger{
+            display: block;
+        }
+    }
+}

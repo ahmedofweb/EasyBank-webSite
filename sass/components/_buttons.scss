@@ -1,0 +1,11 @@
+
+.btn{
+    display: inline-block;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px;
+    padding: .8rem 3.6rem .8rem 3.6rem;
+    @include font(1.4rem, 2.8rem, 500, $white-color)
+}
+.btn:hover{
+    background: linear-gradient(135deg, #2AB6D9 0%, #33D35E 99%);
+}

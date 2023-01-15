@@ -1,0 +1,25 @@
+.sitenav{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    &__link{
+        display: inline-block;
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+        @include font(1.4rem, 1.6rem);
+        border-bottom: 4px solid transparent;
+        transition: border .3s;
+    }
+    &__link:hover{
+        color: $text-color-2;
+        border-color: #33D35E;
+    }
+    @include responsive(tablet){
+        display: none;
+    }
+}
